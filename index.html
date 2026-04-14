@@ -50,8 +50,17 @@
       animation_first="
       property:position;
       from:5.530 -2.052 8.907;
-      to:5.530 4 8.907;"
-      animation_second
+      to:5.530 4 8.907;
+      dur:2000;
+      startEvents: loaded, animationcomplete_fourth;"
+      animation_second="
+      property:rotation;
+      from:-90 0 90;
+      dur:1000;
+      startEvents: loaded, animationcomplete_first;"
+      animation_third="
+      property:position;
+      "
       ></a-entity>
       <a-entity 
       ply-model="src:supertower-0.ply"
