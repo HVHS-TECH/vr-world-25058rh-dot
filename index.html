@@ -18,8 +18,13 @@
       ></a-entity>
       <a-entity 
       ply-model="src:superdoggy.ply"
-      position="0 1 0"
       rotation="-90 0 90"
+      animation="
+      property:position;
+      from:0.7 -1.5 -4;
+      to:0.7 2 -4;
+      loop:true;
+      dir:alternate;"
       ></a-entity>
       <a-entity id="flashes" position="0 0 0"
       animation="
