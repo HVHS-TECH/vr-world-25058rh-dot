@@ -46,30 +46,31 @@
       <a-entity 
       ply-model="src:Iron man.ply"
       position="5.530 -2.052 8.907"
-      rotation="-90 0 90"
+      rotation="-90 0 0"
       animation_first="
       property:position;
       from:5.530 -2.052 8.907;
       to:5.530 4 8.907;
       dur:2000;
-      startEvents: loaded, animationcomplete_fourth;"
+      startEvents: loaded, animationcomplete_fourth"
       animation_second="
       property:rotation;
-      from:-90 0 90;
+      from:-90 0 0;
+      to: 90 0 0;
       dur:1000;
-      startEvents: loaded, animationcomplete_first;"
+      startEvents: loaded, animationcomplete_first"
       animation_third="
       property:position;
       from:5.530 4 8.907;
       to:5.530 -2.052 8.907;
       dur:2000;
-      startEvents: loaded, animationcomplete_second;"
-      animation_third="
-      property:position;
-      from:5.530 4 8.907;
-      to:5.530 -2.052 8.907;
-      dur:2000;
-      startEvents: loaded, animationcomplete_second;"
+      startEvents: loaded, animationcomplete_second"
+      animation_fourth="
+      property:rotation;
+      from:90 0 0;
+      to:-90 0 0;
+      dur:1000;
+      startEvents: loaded, animationcomplete_third"
       ></a-entity>
       <a-entity 
       ply-model="src:supertower-0.ply"
