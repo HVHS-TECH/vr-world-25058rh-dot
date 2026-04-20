@@ -15,6 +15,7 @@
       <a-entity 
       ply-model="src:superman.ply"
       rotation="0 0 90"
+      position="0 3 8"
       animation__first="
       property:position;
       to:0 3 -4;
@@ -22,7 +23,7 @@
       startEvents: loaded, animationcomplete__fourth"
       animation__second="
       property:rotation;
-      to: 0 0 270;
+      to: 0 270 0;
       dur:3000;
       startEvents: animationcomplete__first"
       animation__third="
@@ -32,7 +33,7 @@
       startEvents: animationcomplete__second"
       animation__fourth="
       property:rotation;
-      to:0 0 90;
+      to:0 90 0;
       dur:3000;
       startEvents: animationcomplete__third"
       ></a-entity>
