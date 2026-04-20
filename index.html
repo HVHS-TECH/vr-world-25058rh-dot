@@ -69,8 +69,27 @@
       ></a-entity> 
       </a-entity>
 
-      <a-entity id="Ironman" position="5.530 -2 8.907">
-      
+      <a-entity id="Ironman" position="13.160 3.704 15.865"
+      animation__first="
+      property:position;
+      to:13.160 6 15.865;
+      dur:2000;
+      startEvents: loaded, animationcomplete__fourth"
+      animation__second="
+      property:rotation;
+      to: 90 0 0;
+      dur:3000;
+      startEvents: animationcomplete__first"
+      animation__third="
+      property:position;
+      to:13.160 3.704 15.865;
+      dur:2000;
+      startEvents: animationcomplete__second"
+      animation__fourth="
+      property:rotation;
+      to:270 0 0;
+      dur:3000;
+      startEvents: animationcomplete__third">
 
       <a-entity 
       ply-model="src:Iron man.ply"
