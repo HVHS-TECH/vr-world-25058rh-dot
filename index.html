@@ -8,10 +8,7 @@
   </head>
     <body>
     <a-scene>
-      <a-sphere
-      color="blue"
-      scale="2 2 2"
-      position="1 1 1"></a-sphere>
+      
       <a-sky color="lighblue"></a-sky>
       
        <!-- Put this inside the <a-scene> -->
@@ -22,7 +19,7 @@
 
       animation__first="
       property:position;
-      to:0 5 -4;
+      to:0 3 -4;
       dur:2000;
       startEvents: loaded, animationcomplete__fourth"
       animation__second="
@@ -32,7 +29,7 @@
       startEvents: animationcomplete__first"
       animation__third="
       property:position;
-      to:0 5 8;
+      to:0 3 8;
       dur:2000;
       startEvents: animationcomplete__second"
       animation__fourth="
@@ -80,17 +77,17 @@
       startEvents: loaded, animationcomplete__fourth"
       animation__second="
       property:rotation;
-      to: 270 0 0;
+      to: 90 0 0;
       dur:3000;
       startEvents: animationcomplete__first"
       animation__third="
       property:position;
-      to:5.530 10 8.907;
+      to:5.530 3 8.907;
       dur:2000;
       startEvents: animationcomplete__second"
       animation__fourth="
       property:rotation;
-      to:90 0 0;
+      to:-90 0 0;
       dur:3000;
       startEvents: animationcomplete__third"
       ></a-entity>
