@@ -14,9 +14,7 @@
        <!-- Put this inside the <a-scene> -->
       <a-entity 
       ply-model="src:superman.ply"
-      position="0 3 8"
-      rotation="90 0 0"
-
+      rotation="0 0 90"
       animation__first="
       property:position;
       to:0 3 -4;
@@ -24,7 +22,7 @@
       startEvents: loaded, animationcomplete__fourth"
       animation__second="
       property:rotation;
-      to: 270 0 0;
+      to: 0 0 270;
       dur:3000;
       startEvents: animationcomplete__first"
       animation__third="
@@ -34,7 +32,7 @@
       startEvents: animationcomplete__second"
       animation__fourth="
       property:rotation;
-      to:90 0 0;
+      to:0 0 90;
       dur:3000;
       startEvents: animationcomplete__third"
       ></a-entity>
